@@ -1,0 +1,128 @@
+main svg {
+    font-size: 4rem;
+}
+
+.main__temperature{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #7D81B5;
+    margin-top: 3rem;
+    padding-bottom: 1rem;
+}
+
+.main__temperature>div:not(:last-of-type){
+    margin-right: 3rem;
+}
+
+.main__temperature-temp {
+    font-size: 6rem;
+    text-shadow: 5px 5px 5px rgba(0,0,0,0.23);
+}
+
+.main__temperature-side {
+    opacity: .4;
+    text-align: center;
+}
+
+.main__temperature-side > div {
+    margin-top: -.8rem;
+}
+
+
+.main__forecast {
+    padding: 3rem 2rem 1rem 2rem;
+    font-size: 1.8rem;
+}
+
+.main__forecast > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main__forecast > div:not(:last-of-type){
+    margin-bottom: 1rem;
+}
+
+
+.main_sunposition {
+    background: rgba(255,255,255, .2);
+    border-radius: 1rem;
+    padding: 2rem;
+    margin-top: 3rem;
+    box-shadow: 5px 5px 5px rgb(0 0 0 / 10%);
+}
+
+
+.main_sunposition-sunmoon {
+    position: relative;
+    width: 23rem;
+    margin: auto;
+}
+
+
+.sun-times {
+    height: 6rem;
+    overflow-y: hidden;
+}
+
+.sun-path {
+    margin-left: 25px;
+    width: 17rem;
+    height: 17rem;
+    overflow: hidden;
+    border: 1px dashed #999;
+    border-radius: 50%;
+}
+
+.sun-symbol-path {
+    position: absolute;
+    color: #E1BE11;
+    text-shadow: 0 0 5px black;
+    height: 8.9rem;
+    transition: transform 2s linear;
+    transform-origin: 50% 100%;
+    left: 9rem;
+    bottom: 15px;
+}
+
+.symbol {
+    position: relative;
+    font-size: 16px;
+    top: -8px;
+}
+
+.sun-animation {
+    width: 0px;
+    height: 150px;
+    background-color: rgba(255, 255, 0, 0.4);
+    -webkit-transition: width 2s linear;
+    transition: width 2s linear;
+}
+
+
+.legend {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+}
+
+.controls {
+  margin-top: 50px;
+}
+
+.main_detaildata {
+    display: flex;
+    justify-content: space-between;
+    max-width: 30rem;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.main_detaildata header {
+    font-size: 1.2rem;
+    opacity: .5;
+}
